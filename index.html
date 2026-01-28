@@ -1,84 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mafalda's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <nav class="menu"> <!--Aqui dentro está a navegação do site --> 
-    <ul> <!-- Quero uma lista mas quero que ela não esteja de forma ordenada - ou seja, 1|2|3... -->
-        <li><a href="#home">Home</a></li> <!--  list item = um item da lista -->
-        <li><a href="#portfolio">Portefólio</a></li> <!-- a é uma anchor da lista - href significa que quando carregar ele vai buscar esse id -->
-        <li><a href="#about">Sobre Mim</a></li>
-    </ul>
+    <nav>
+        <ul id = "menu-principal">
+            <li><a>Home</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Contacto</a></li>
+        </ul>
     </nav>
-    </header>
 
-    <main>
-        <section id="home" >
-            <div class =
-            <h2>Olá, sou a Mafalda!</h2>
-            <h1>Eleva a tua empresa!</h1>
-            <p>Desenvolve o poder da tua empresa comigo!</p>
+    <div id = "flex1">
+        <div class="flex_text" class="flex_button">
+        <div class="flex_text"><h2>Olá, sou a Mafalda!</h2></div>
+        <div class="flex_text"><h1>Eleva a tua empresa!</h1></div>
+        <div class="flex_text"><p>Desenvolve o poder da tua empresa comigo!</p></div>
+        <div class="flex_button"><button type="button">Contacta já!</button></div>
+        </div>
+        <div class = "flex1_imagem">
+         <img src="./imagens_a_usar/foto_Mafalda.jpg" width="150" height="225" alt="Foto Perfil Mafalda Moura" ></img>
+        </div>
+    </div>
 
-            <img class="experience-card__icon" src="strategy.png" alt="" aria-hidden="true">
+    <h2>A Minha Experiência</h2>
+    <div id ="experiencia_mafalda" class="experiencia_título" class="experiencia_texto" class="experiencia_imagem">
+        
+        <div class = "estrategia_direcao">
+            <div class="experiencia_imagem"><img src="./imagens_a_usar/strategy.png" width="50" height="50" alt="logotipo estratégia"></img></div>
+            <div class="experiencia_título"><h3>Estratégia e Direção</h3></div>
+            <div class=""experiencia_texto><p>loremipsum</p></div>
+        </div>
 
+        <div class = "branding_logo">
+            <div class="experiencia_imagem"><img src="./imagens_a_usar/strategy.png" width="50" height="50" alt="logotipo estratégia"></img></div>
+            <div class="experiencia_título"><h3>Estratégia e Direção</h3></div>
+            <div class=""experiencia_texto><p>loremipsum</p></div>
+        </div>
 
-            <button type="button">Contacta já!</button>
-        </section>
+        <div class = "dev_webflow">
+            <div class="experiencia_imagem"><img src="./imagens_a_usar/strategy.png" width="50" height="50" alt="logotipo estratégia"></img></div>
+            <div class="experiencia_título"><h3>Estratégia e Direção</h3></div>
+            <div class=""experiencia_texto><p>loremipsum</p></div>
+        </div>
+    </div>
 
-        <section id="portfolio" >
-            <h2> A minha experiência </h2>
-            <div class="experience__grid">
-                <article class="experience-card">
-                    <img class="experience-card__icon" src="imagens_a_usar/strategy.png" alt="" aria-hidden="true">
-                    <h3 class="experience-card__title">Estratégia & Direção</h3>
-                    <p class="experience-card__text">
-                        Foco em criar parcerias únicas e extravagantes para a sua empresa 
-                    </p>
-                </article>
-
-                <article class="experience-card">
-                    <img class="experience-card__icon" src="imagens_a_usar/branding.png" alt="" aria-hidden="true">
-                    <h3 class="experience-card__title">Branding & Logo</h3>
-                    <p class="experience-card__text">
-                        Um novo visual para a sua marca para atingir tudo o que anseia! 
-                    </p>
-                </article>
-
-                <article class="experience-card">
-                    <img class="experience-card__icon" src="imagens_a_usar/tela-do-monitor.png" alt="" aria-hidden="true">
-                    <h3 class="experience-card__title">Desenvolvimento de Webflow</h3>
-                    <p class="experience-card__text">
-                        Os melhores flows para que nunca tenha reclamações.  
-                    </p>
-                </article>
+    <div id = "sobre_mim">
+        <div class="sobre_mim_titulo" class="sobre_mim_texto">
+            <div class = "sobre_mim_imagem">
+                <img src="./imagens_a_usar/foto_Mafalda.jpg" width="150" height="225" alt="Foto Perfil Mafalda Moura" ></img>
             </div>
 
-        </section>
+            <div class="sobre_mim_texto"><h2>Sobre Mim</h2></div>
 
-        <section id="about" >
-            <img class="about" src="imagens_a_usar/foto_Mafalda.jpg" alt="" aria-hidden="true">
-            <h1> SOBRE MIM </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Fusce varius faucibus massa sollicitudin amet augue. 
-                Nibh metus a semper purus mauris duis. 
-                Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.
-                Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. 
-                Amet pellentesque sit pulvinar lorem mi a, euismod risus r.
-            </p>
-        </section>
+            <div class="sobre_mim_texto"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.
+                Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p></div>
+            </div>
 
-        <section id="contacto" ></section>
-    </main>
-    
-    <footer>
+        
+    </div>
 
-    </footer>
 
-    
 </body>
 </html>
