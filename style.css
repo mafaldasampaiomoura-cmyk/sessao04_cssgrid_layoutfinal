@@ -1,97 +1,150 @@
-*{ 
-    font-family: "roboto", sans-serif;
-    text-align: justify;
-    padding:10px;
-}
-/* Menu Principal */
-#menu-principal{
-   display: flex;
-    justify-content: center;
-    padding: 16px 24px; 
-    gap: 100px;
-    list-style: none;
-    color: black;
-    font-weight: 200;
-    text-decoration: none;
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111827;
+  background: #ffffff;
+  max-width: 420px;          
+  margin: 0 auto;
+  padding: 18px 18px 36px;
 }
 
-/*Primeiro Menu */
-#flex1{
-    background-color: #F5FCFF;
-    display: flex; 
-    justify-content: space-around;
-
+.titulo-pagina{
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 6px 0 18px;
+  padding: 10px 0 14px;
+  border-bottom: 1px solid #F1F3F5;
 }
 
-.flex_text{
-    margin: 10px;
-    
-}
-.flex_text h1{
-    margin:0%
-    color: 74pt;
-    font-weight: bold;
-    font-size: x-large;
-    justify-content: left;
+.foto-perfil{
+  width: 74px;
+  height: 74px;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+  float: left;                 
+  margin: 6px 14px 10px 0;
 }
 
-.flex_text h2{
-    font-weight:lighter;
-    font-size: smaller;
+.perfil-nome{
+  margin: 6px 0 2px;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
-.flex_text p{
-    font-weight: 50;
-    font-size:small;
+.perfil-cargo{
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2563EB;
 }
 
-.flex_button button{
-    background-color: #5E3BEE;
-    border:none ;
-    color: white; 
-    padding: 15px 32px; 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
+.perfil-localizacao{
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: #6B7280;
 }
 
-.flex1_imagem{
-    border: 0px solid #ddd;
-  border-radius: 4px;
-  padding: 1px;
-  width: 10px;
+
+.perfil-resumo{
+  clear: both;
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6B7280;
 }
 
-/* Experiencia Mafalda */
-#experiencia_mafalda{
-    background-color:#F5FCFF ;
-    display: flex;
-    justify-content: space-around;
-    
-}
-/*Estratégia e Direção*/
 
-.experiencia_imagem{
-   box-shadow: 10px 10px 5px 1px lightblue; 
-}
-.experiencia_titulo h3{
-    background-color:
+.titulo-divisao{
+  margin: 22px 0 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9CA3AF;
 }
 
-/*Sobre Mim*/
 
-#sobre_mim{
-    display: grid;
-    gap: 10px;
+
+.titulo-divisao + div,
+.titulo-divisao + div + div{
+  position: relative;
+  padding-left: 64px;      
+  margin: 0 0 18px;
 }
 
-.sobre_mim_texto h2{
-    font-weight:bolder;
-    font-size:medium;
+
+.emprego{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.sobre_mim_texto p{
-    font-weight: 50;
-    font-size:small;
+.emprego-empresa{
+  margin: 2px 0 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2563EB;
+}
+
+.emprego-descricao{
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #6B7280;
+}
+
+.emprego-data{
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+.titulo-divisao + div + div + .titulo-divisao + div{
+  position: relative;
+  padding-left: 64px;
+  margin: 0 0 18px;
+}
+
+
+.titulo-divisao + div + div + .titulo-divisao + div h3{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.titulo-divisao + div + div + .titulo-divisao + div h4{
+  margin: 2px 0 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6B7280;
+}
+
+.titulo-divisao + div + div + .titulo-divisao + div p{
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+.skills{
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag{
+  border: 1px solid #BFDBFE;
+  color: #2563EB;
+  background: #EFF6FF;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
